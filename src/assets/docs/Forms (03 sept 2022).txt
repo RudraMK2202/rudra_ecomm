@@ -1,0 +1,183 @@
+Forms in HTML
+Sudhakar Sharma
+•
+Sep 3
+                                             HTML Forms
+=================================================================================================================
+
+- Form is container with collection elements like button, textbox, checkbox, radio, listbox, dropdown etc..
+- Form provides an UI for interacting with data.
+- You can view, input, edit, delete data using form.
+- Web application use form for "CRUD" operations
+
+        C        - Create
+        R        - Read
+        U        - Update
+        D        - Delete
+
+- Web application uses form for basic interations like
+        Login
+        Register
+        Change Account Details
+        Chat
+        Comment etc..
+- HTML provides following elements for form
+
+<form>
+<input>
+<select>
+<option>
+<optgroup>
+<datalist>
+<textarea>
+<meter>
+<progress>
+
+
+                                  <form>
+                           =====================
+
+- It is container.
+- It comprises of elements that allow interaction with application.
+
+Syntax:
+        <form>
+
+        </form>
+
+- A page may contain multiple forms.
+- Every form comprises of following attributes
+
+
+
+                                     Form Attributes:
+==================================================================================
+
+
+1. name            :  It is used to refer a form.
+
+    <form name="">
+     - Always use names with alpha numeric chars
+     - Name must start with alphabet
+     - Name must be in camel case
+    - Prefix must define the object and suffix must define the purpose.
+
+            frm            - form
+            btn            - button
+            txt                - textbox
+
+            Register        - for Register
+            Name            - for Name
+            Age            - for Age
+
+            txtAge        - textbox for age
+            btnRegister    - button for register
+            frmLogin        - form for login
+            txtPassword - textbox for password
+
+
+2. Id        : It is used to define a unique ID for form to use in Styles or
+              Scripts.
+
+            <form name="frmRegister"  id="frmRegister">
+
+3. Class    : It is used to define a reference name for css class.
+              Every element can have multiple classes.
+
+            <form class="border-style basic-style shadow-style">
+
+            .border-style {  }
+            .basic-style { }
+            .shadow-style { }
+
+4. Method:     It defines the actions that a form can perform.
+                HTML form can perform only 2 actions.
+                a) GET
+                b) POST
+
+                GET is used by form to fetch data from server.
+                POST is used by form to submit data to server.
+
+
+                The default method for form is "GET".
+                Form can submit only on "Submit" button click.
+
+FAQs:
+1. What is the default method for form?
+A. GET
+
+2. When to use GET and POST?
+A. GET for fetching data from server.
+    POST for submitting data to server.
+
+3. Can we submit data to server on GET?
+A. Yes. But not recommended.
+
+4. What are the issues on submitting data to server with GET?
+A.
+ - Data will be appended into URL as querystring.
+ - Everyone can view your data.
+ - It is not safe.
+ - It is easy to hack.
+ - It is stored in browser logs. [history]
+ - It can be bookmarked.
+ - If data is in URL, then we have limit for data.
+ - You can submit max 2048 chars.
+ - You can't submit complex data. [Binary]
+ - When you submit data on GET, it can be cached.
+ - Always use GET for "Fetch".
+
+5. What are the features of POST?
+A.
+-  Data will be in "Form Body".
+- It is not appended into URL
+- It is safe.
+- It is not saved in browser logs.
+- It can't be bookmarked.
+- It is hard to hack.
+- No limit to submit
+- You can submit binary data.
+- You can't cache.
+
+Syntax:
+        <form method="get | post">
+
+5. Action        :  It defines where to post your data. It is usually
+                   any server side technology.
+
+        <form method="post"  action="page.asp|jsp|php">
+
+6. Novalidate:  It is used to by-pass the default HTML validations.
+
+
+Ex:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        .border-style {
+            border:2px dotted red;
+        }
+        .shadow-style {
+            box-shadow: 3px 2px 3px black;
+        }
+        .basic-style {
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form name="frmRegister" method="get" novalidate class="border-style basic-style shadow-style" id="frmRegister">
+        Email:
+        <input type="email" name="email">
+        <br> <br>
+        <button>Register</button>
+    </form>
+</body>
+</html>

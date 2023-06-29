@@ -1,0 +1,19 @@
+.user-auth {
+    border: 6px solid whitesmoke;
+    height: 370px;
+    width: 400px;
+    margin-top: 40px;
+    margin-left: 300px;
+    padding: 5px;
+    padding-top: 30px;
+}
+.auth-header {
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+.login a {
+    color: green;
+}
+.signup a {
+    color: blue;
+}

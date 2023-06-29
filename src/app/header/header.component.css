@@ -1,0 +1,52 @@
+.nav {
+    justify-content: space-between;
+}
+.nav h1 {
+    color: chocolate;
+    margin: 0;
+    font-size: 45px;
+}
+.nav ul {
+    display: inline-flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.nav li {
+    padding: 3px;
+}
+.nav li a {
+    text-decoration: none;
+    color: chocolate;
+    margin-right: 10px;
+}
+
+.nav-search input {
+    color: chocolate;
+    border: 1px solid chocolate;
+    height: 35px;
+    border-right: 0px;
+}
+.nav-search button{
+    color: chocolate;
+    border: 1px solid chocolate;
+    height: 34px;
+    border-left: 0px;
+}
+.suggested-result {
+ position: absolute;
+ display: list-item !important;
+ z-index: 10;
+ width: 240px;
+ top: 50px;
+ 
+}
+.suggested-result li {
+    background-color: whitesmoke;
+    border: 1px solid wheat;
+    padding: 5px;
+}
+.suggested-result li a {
+    cursor: pointer;
+    color: chocolate;
+}

@@ -1,1 +1,77 @@
-/* You can add global styles to this file, and also import other style files */
+@import './../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+@import './../node_modules/bootstrap/dist/css/bootstrap.css';
+
+body {
+    font-family: sans-serif;
+}
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+}
+.common-form {
+ text-align: center;
+ display: flex;
+ margin: auto;
+ flex-direction: column;
+ width: 300px;
+}
+.form-input {
+ height: 35px;
+ margin-bottom: 20px;
+ padding-left: 10px;
+ border: 1px solid chocolate;
+ color: chocolate;
+}
+.form-button {
+    border: 1px solid chocolate;
+    color:white;
+    background-color: rgb(21, 122, 223);
+}
+.form-button-red {
+    border: 1px solid chocolate;
+    color:white;
+    background-color: rgb(184, 9, 9);
+}
+.p-message {
+    color: green;
+}
+.p-error{
+    color: red;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: black;
+    border: 5px;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+.auth-header {
+    text-align: center;
+    background-color: chocolate;
+    color: whitesmoke;
+    width: 75%;
+    margin-left: 45px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+}
+.display-name {
+    color: gold; 
+    background-color: black;
+    padding: 5px; 
+    border: 1px solid rgb(160, 150, 11);
+    border-radius: 15px;
+}
+.invalid-input {
+    color: rgb(234, 11, 11);
+    font-size: 14px;
+    margin-left: -120px;
+    margin-top: -20px;
+}
+button:disabled {
+    cursor: not-allowed;
+    border: 1px solid chocolate;
+    color:white;
+    background-color: rgb(77, 78, 78);
+}

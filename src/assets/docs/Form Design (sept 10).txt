@@ -1,0 +1,187 @@
+Form Designs
+Sudhakar Sharma
+•
+Sep 10
+Bootstrap Classes for Form Elements
+
+1. Install Bootstrap in your project
+
+        >npm install  bootstrap  --save
+
+2. Bootstrap CSS file is available in
+
+      "node_modules/bootstrap/dist/css/bootstrap.css"
+
+    Note:  "dist" is folder that contains files ready for "Production" [Go Live]
+
+3. Link Bootstrap icons and Bootstrap CSS into webpage
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+4. Bootstrap class used for Form Elements
+
+Class Name                        Description
+----------------------------------------------------------------------------------------------
+form-control                        textbox, password, email, date, url, number
+                                    textarea.
+
+form-select                        dropdown, listbox
+
+form-range                        range input
+
+form-check-input                    radio and checkbox
+
+form-switch                        radio and checkbox group
+
+form-label                            label control  <label>
+
+input-group                        To group a set of form elements
+input-group-lg|sm                large size.
+
+form-file                            input type file
+
+m                                    margin
+p                                    padding
+
+t                                    top
+b                                    bottom
+e                                    right
+s                                    left
+
+mt [margin top]
+pe [padding right]
+
+1-4                                    size of margin and padding
+m-4
+mt-4
+pb-2
+       
+btn                                        Buttons
+btn-primary, secondary, danger    Button Styles
+      warning, success, info etc..
+
+w-100                                    width
+w-25
+w-50
+w-75
+
+
+Ex: Designing Form with standard Format
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+        form {
+            border:1px solid gray;
+            padding: 30px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+   <form>
+      <h3> <span class="bi bi-person-fill"></span> Register User</h3>
+      <div class="mb-3">                                                  [every category-->keep inside a div(container)]
+          <label class="form-label" for="UserName">User Name</label>      ["label" defines the heading of the category
+                                                                            it works as a '<span>']
+          <div>                                                           [to make the "label" work for a particular input, use
+                                                                           an attribute "for= 'name' of the input" inside label]
+            <input type="text" class="form-control" name="UserName">
+          </div>
+      </div>
+      <div class="mb-3">
+         <label class="form-label" for="Password">Password</label>
+         <div>
+            <input type="password" class="form-control" name="Password">
+         </div>
+      </div>
+      <div class="mb-3">
+         <label class="form-label" for="City">Your City</label>
+         <div>
+            <select name="City" class="form-select">
+                <option>Select Your City</option>
+                <option>Delhi</option>
+                <option>Hyd</option>
+            </select>
+         </div>
+      </div>
+      <div class="mb-3">
+         <label class="form-label" for="Subscribe">Subscribe</label>
+         <div  class="form-switch">
+            <input type="checkbox" checked class="form-check-input" name="Subscribe"> <label>Yes</label>
+         </div>
+      </div>
+      <div>
+        <button class="btn btn-primary w-100">Register</button>
+      </div>
+   </form>
+</body>
+</html>
+
+Ex: Input group with bootstrap
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+        .search-bar {
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="search-bar">
+        <div class="input-group mb-4">
+            <select class="input-group-text">
+                <option>All</option>
+                <option>Mobiles</option>
+                <option>Fashion</option>
+            </select>
+            <input type="text" class="form-control">
+            <button class="btn btn-warning">
+                <span class="bi bi-search"></span>
+            </button>
+        </div>
+        <div class="input-group input-group-lg mb-3">
+            <input type="email" placeholder="Your email address" class="form-control">
+            <button class="btn btn-danger">
+                Get Started <span class="bi bi-chevron-right"></span>
+            </button>
+        </div>
+        <div class="input-group input-group-lg">
+            <span class="bi bi-key-fill input-group-text"></span>
+            <input type="password" class="form-control">
+            <span class="bi bi-check-square-fill input-group-text"></span>
+        </div>
+    </div>
+</body>
+</html>
+Class comments
