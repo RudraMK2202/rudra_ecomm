@@ -46,7 +46,7 @@
   "products": [
     {
       "name": "moto edge40",
-      "price": "29999",
+      "price": 29999,
       "category": "mobiles",
       "color": "Sage",
       "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/2/m/o/edge-40-pay40030in-motorola-original-imagpqzchzhg6fex.jpeg?q=90",
@@ -55,7 +55,7 @@
     },
     {
       "name": "HP Laptop",
-      "price": "39999",
+      "price": 39999,
       "category": "laptop",
       "color": "Black",
       "image": "https://www.jiomart.com/images/product/original/493177597/hp-15s-fq2670tu-laptop-11th-gen-intel-core-i3-1115g4-8-gb-ram-256-gb-ssd-windows-11-home-mso-fhd-39-6-cm-15-6-inch-digital-o493177597-p593566286-2-202208302208.jpeg?im=Resize=(420,420)",
@@ -64,7 +64,7 @@
     },
     {
       "name": "Puma Running Shoes",
-      "price": "1999",
+      "price": 1999,
       "category": "Shoes",
       "color": "Black",
       "image": "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_300,h_300/global/379988/01/sv04/fnd/IND/fmt/png/Scorch-Runner-V2-Men's-Shoes",
@@ -73,7 +73,7 @@
     },
     {
       "name": "poco f5 5g",
-      "price": "29749",
+      "price": 29749,
       "color": "black",
       "category": "mobiles",
       "description": "best performance",
@@ -82,7 +82,7 @@
     },
     {
       "name": "samsung f54 5g",
-      "price": "28990",
+      "price": 28990,
       "color": "blue",
       "category": "mobiles",
       "description": "best camera",
@@ -91,7 +91,7 @@
     },
     {
       "name": "Ambrane PowerBank",
-      "price": "999",
+      "price": 999,
       "category": "electronics",
       "color": "Black",
       "image": "https://www.insightssuccess.in/wp-content/uploads/2019/06/Ambrane-Lithium-Polymer-Power-Bank.jpg",
@@ -100,7 +100,7 @@
     },
     {
       "name": "Sony 4k TV",
-      "price": "49999",
+      "price": 49999,
       "category": "electronics",
       "color": "Black",
       "image": "https://m.media-amazon.com/images/I/81FLRLCg+4S.jpg",
@@ -109,7 +109,7 @@
     },
     {
       "name": "CASIO Wrist Watch",
-      "price": "2999",
+      "price": 2999,
       "category": "watches",
       "color": "Blue",
       "image": "https://i00.eu/img/606/1024x1024/cyn6cvio/62971.jpg",
@@ -118,7 +118,7 @@
     },
     {
       "name": "Lenovo Laptop",
-      "price": "32599",
+      "price": 32599,
       "category": "laptop",
       "color": "Blue",
       "image": "https://5.imimg.com/data5/FT/DJ/QL/GLADMIN-73695913/selection-085-500x500.png",
@@ -127,7 +127,7 @@
     },
     {
       "name": "Titan Wrist Watches",
-      "price": "1799",
+      "price": 1799,
       "category": "watches",
       "color": "Black",
       "image": "https://staticimg.titan.co.in/Titan/Catalog/1722KM01_2.jpg?impolicy=pqmed&imwidth=640",
@@ -136,7 +136,7 @@
     },
     {
       "name": "Nike Running Shoes",
-      "price": "2399",
+      "price": 2399,
       "category": "shoes",
       "color": "Red",
       "image": "https://i.pinimg.com/originals/51/d1/87/51d1876c791b4704d2054fa3f5404e70.jpg",
@@ -145,7 +145,7 @@
     },
     {
       "name": "Samsung 4k TV",
-      "price": "34999",
+      "price": 34999,
       "category": "electronics",
       "color": "Black",
       "image": "https://c.dlnws.com/image/upload/f_auto,t_maximum,q_auto/content/ke66fl8ease4gnxyzhse.jpg",
@@ -175,18 +175,6 @@
   ],
   "cart": [
     {
-      "name": "HP Laptop",
-      "price": "39,999",
-      "category": "laptop",
-      "color": "Black",
-      "image": "https://www.jiomart.com/images/product/original/493177597/hp-15s-fq2670tu-laptop-11th-gen-intel-core-i3-1115g4-8-gb-ram-256-gb-ssd-windows-11-home-mso-fhd-39-6-cm-15-6-inch-digital-o493177597-p593566286-2-202208302208.jpeg?im=Resize=(420,420)",
-      "description": "This is a HP Laptop.",
-      "quantity": 1,
-      "userId": 3,
-      "productId": 2,
-      "id": 2
-    },
-    {
       "name": "moto edge40",
       "price": "29,999",
       "category": "mobiles",
@@ -199,64 +187,26 @@
       "id": 3
     },
     {
-      "name": "poco f5 5g",
-      "price": "29,749",
-      "color": "black",
-      "category": "mobiles",
-      "description": "best performance",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyHEX4nZ6cScRe4eC_j9GuHW74meAXCeniJ9M0g2VpGSqHPxBu6-YcaNyM45O-oCrcX-g&usqp=CAU",
-      "quantity": 1,
-      "userId": 3,
-      "productId": 4,
-      "id": 4
-    },
-    {
-      "name": "poco f5 5g",
-      "price": "29,749",
-      "color": "black",
-      "category": "mobiles",
-      "description": "best performance",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyHEX4nZ6cScRe4eC_j9GuHW74meAXCeniJ9M0g2VpGSqHPxBu6-YcaNyM45O-oCrcX-g&usqp=CAU",
-      "quantity": 1,
-      "userId": 3,
-      "productId": 4,
-      "id": 5
-    },
-    {
-      "name": "Sony 4k TV",
-      "price": "49,999",
-      "category": "electronics",
+      "name": "HP Laptop",
+      "price": 39999,
+      "category": "laptop",
       "color": "Black",
-      "image": "https://m.media-amazon.com/images/I/81FLRLCg+4S.jpg",
-      "description": "This is a SONY 4k TV.",
+      "image": "https://www.jiomart.com/images/product/original/493177597/hp-15s-fq2670tu-laptop-11th-gen-intel-core-i3-1115g4-8-gb-ram-256-gb-ssd-windows-11-home-mso-fhd-39-6-cm-15-6-inch-digital-o493177597-p593566286-2-202208302208.jpeg?im=Resize=(420,420)",
+      "description": "This is a HP Laptop.",
       "quantity": 1,
       "userId": 3,
-      "productId": 7,
-      "id": 6
-    },
+      "productId": 2,
+      "id": 4
+    }
+  ],
+  "orders": [
     {
-      "name": "CASIO Wrist Watch",
-      "price": "2999",
-      "category": "watches",
-      "color": "Blue",
-      "image": "https://i00.eu/img/606/1024x1024/cyn6cvio/62971.jpg",
-      "description": "This is a CASIO Wrist watch.",
-      "quantity": 1,
+      "email": "xxx@xx.com",
+      "address": "olang,bhadrak",
+      "contact": "9999",
+      "totalPrice": 31038,
       "userId": 3,
-      "productId": 8,
-      "id": 7
-    },
-    {
-      "name": "Nike Running Shoes",
-      "price": "2399",
-      "category": "shoes",
-      "color": "Red",
-      "image": "https://i.pinimg.com/originals/51/d1/87/51d1876c791b4704d2054fa3f5404e70.jpg",
-      "description": "This is a NIKE Running Shoes.",
-      "quantity": 1,
-      "userId": 3,
-      "productId": 11,
-      "id": 8
+      "id": 1
     }
   ]
 }

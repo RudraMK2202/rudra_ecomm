@@ -10,6 +10,8 @@ import { SearchComponent } from './component/search/search.component';
 import { ProductDetailsComponent } from './component/product-details/product-details.component';
 import { UserAuthComponent } from './component/user-auth/user-auth.component';
 import { CartPageComponent } from './component/cart-page/cart-page.component';
+import { CheckoutComponent } from './component/checkout/checkout.component';
+import { MyordersComponent } from './component/myorders/myorders.component';
 
 const routes: Routes = [
   {path:"",component:HomeComponent},
@@ -20,7 +22,9 @@ const routes: Routes = [
   {path:"search/:query", component:SearchComponent},
   {path:"details/:productId", component:ProductDetailsComponent},
   {path:"user-auth", component:UserAuthComponent},
-  {path:"cart-page", component:CartPageComponent}
+  {path:"cart-page", component:CartPageComponent},
+  {path:"checkout", component:CheckoutComponent},
+  {path:"myorders", component:MyordersComponent}
   
 ];
 

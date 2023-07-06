@@ -35,6 +35,7 @@ body {
 }
 .p-message {
     color: green;
+    text-align: center;
 }
 .p-error{
     color: red;
@@ -46,6 +47,15 @@ body {
 a {
     text-decoration: none;
     cursor: pointer;
+}
+.user-auth {
+    border: 6px solid whitesmoke;
+    height: 370px;
+    width: 400px;
+    margin-top: 40px;
+    margin-left: 300px;
+    padding: 5px;
+    padding-top: 30px;
 }
 .auth-header {
     text-align: center;

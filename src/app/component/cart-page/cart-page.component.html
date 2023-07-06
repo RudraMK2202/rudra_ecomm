@@ -16,7 +16,7 @@
                     <span><b>Quantity:</b> {{cart.quantity}}</span>
                 </li>
                 <li>
-                    <button class="form-button-red">Remove</button>
+                    <button class="form-button-red"(click)="removeFromCart(cart.id)">Remove</button>
                 </li>
             </ul>
     
@@ -25,20 +25,21 @@
             <h3>Summary</h3>
             <ul>
                 <li>
-                    <span>Amount: </span><span>300</span>
+                    <span>Amount: </span><span>{{priceSummary.price}}</span>
                 </li>
                 <li>
-                    <span>Tax: </span><span>30</span>
+                    <span>Tax: </span><span>{{priceSummary.tax}}</span>
                 </li>
                 <li>
-                    <span>Shipping Charge: </span><span>40</span>
+                    <span>Shipping Charge: </span><span>{{priceSummary.delivery}}</span>
                 </li>
                 <li>
-                    <span>Discount: </span><span>30</span>
+                    <span>Discount: </span><span>{{priceSummary.discount}}</span>
                 </li>
                 <li>
-                    <span><h4>Total:</h4></span><span><h4>340</h4></span>
+                    <span><h4>Total:</h4></span><span><h4>{{priceSummary.total}}</h4></span>
                 </li>
+                <button class="form-button w-100" (click)="checkout()">CheckOut</button>
             </ul>
         </div>
     </div>

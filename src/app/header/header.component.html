@@ -1,7 +1,7 @@
 
 <nav class="nav">
  <h1><a routerLink="" class="text-decoration-none" style="color: chocolate;">E-Comm</a></h1>
- <div *ngIf="menuType==='default'" class="nav-search">
+ <div *ngIf="menuType!=='seller'" class="nav-search">
     <input type="text" #searchProduct
       (keyup)="searchProducts($event)" (blur)="hideSearch()" placeholder="Search for Products">
     <button (click)="productSearch(searchProduct.value)" >Search</button>  
@@ -12,23 +12,27 @@
     </ul>
  </div>
  <div [ngSwitch]="menuType">
+     <!-- DEFAULT header -->
    <ul *ngSwitchCase="'default'">
       <li><a routerLink="">Home</a></li>
       <li><a routerLink="seller-auth">Seller</a></li>
       <li><a routerLink="user-auth">Login/SignUp</a></li>
       <li><a href="">Cart[{{cartCount}}]</a></li>
    </ul>
+     <!-- SELLER header -->
    <ul *ngSwitchCase="'seller'">
       <li><a routerLink="/seller-home">Product List</a></li>
       <li><a routerLink="seller-add-product">Add Product</a></li>
       <li><a (click)="logout()">LogOut</a></li>
       <li><a href="" class="display-name">{{sellerName | titlecase}}</a></li>
    </ul>
+     <!-- USER header -->
    <ul *ngSwitchCase="'user'">
     <li><a routerLink="">Home</a></li>
     <li><a href="" class="display-name">{{ userName | titlecase}}</a></li>
+    <li><a routerLink="/myorders">My Orders</a></li>
+    <li><a [routerLink]="cartCount>0?'cart-page':null">Cart[{{cartCount}}]</a></li>
     <li><a (click)="userLogout()">Log Out</a></li>
-    <li><a routerLink="cart-page">Cart[{{cartCount}}]</a></li>
  </ul>
  </div>
 </nav>

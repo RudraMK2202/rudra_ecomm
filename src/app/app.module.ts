@@ -19,6 +19,8 @@ import { SearchComponent } from './component/search/search.component';
 import { ProductDetailsComponent } from './component/product-details/product-details.component';
 import { UserAuthComponent } from './component/user-auth/user-auth.component';
 import { CartPageComponent } from './component/cart-page/cart-page.component';
+import { CheckoutComponent } from './component/checkout/checkout.component';
+import { MyordersComponent } from './component/myorders/myorders.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import { CartPageComponent } from './component/cart-page/cart-page.component';
     SearchComponent,
     ProductDetailsComponent,
     UserAuthComponent,
-    CartPageComponent
+    CartPageComponent,
+    CheckoutComponent,
+    MyordersComponent
   ],
   imports: [
     BrowserModule,
