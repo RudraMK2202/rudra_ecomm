@@ -1,10 +1,11 @@
 
 <nav class="nav">
- <h1><a routerLink="" class="text-decoration-none" style="color: chocolate;">E-Comm</a></h1>
- <div *ngIf="menuType!=='seller'" class="nav-search">
-    <input type="text" #searchProduct
-      (keyup)="searchProducts($event)" (blur)="hideSearch()" placeholder="Search for Products">
-    <button (click)="productSearch(searchProduct.value)" >Search</button>  
+ <h1><a routerLink="" class="text-decoration-none" style="color: chocolate;">Shopper</a></h1>
+ <div *ngIf="menuType!=='seller'" class="input-group w-25 h-25">
+    <input type="text" class="form-control" #searchProduct
+    (keyup)="searchProducts($event)" (blur)="hideSearch()" placeholder="Search for Products">
+  <button (click)="productSearch(searchProduct.value)" class="btn btn-warning w-25"><span class="bi bi-search"></span></button>  
+   
     <ul class="suggested-result" *ngIf="searchResult">
      <li *ngFor="let item of searchResult">
        <a (mousedown)="redirectToDetails(item.id)">{{item.name}}</a>

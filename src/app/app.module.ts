@@ -21,6 +21,7 @@ import { UserAuthComponent } from './component/user-auth/user-auth.component';
 import { CartPageComponent } from './component/cart-page/cart-page.component';
 import { CheckoutComponent } from './component/checkout/checkout.component';
 import { MyordersComponent } from './component/myorders/myorders.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { MyordersComponent } from './component/myorders/myorders.component';
     UserAuthComponent,
     CartPageComponent,
     CheckoutComponent,
-    MyordersComponent
+    MyordersComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,27 @@
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    background-color: rgb(34, 32, 32);
+    color: goldenrod;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 7px;
+}
+.footer-bottom{
+    height: 140px;
+    background-color: rgb(26, 25, 25);
+    color: wheat;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 50px;
+}
+.footer-social{
+ margin-left: 150px;
+ font-size: larger;
+}
+.footer-social span {
+    padding: 8px;
+}
