@@ -25,3 +25,7 @@
 .footer-social span {
     padding: 8px;
 }
+dt {
+    margin-bottom: 8px;
+    border-bottom: 2px solid rgb(43, 42, 42);
+}
